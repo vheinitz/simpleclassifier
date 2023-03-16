@@ -82,6 +82,42 @@
      Q_PROPERTY( QVariant value READ value WRITE setValue USER true)
  };
 
+
+ class CL2_EXPORT FloatSliderControl : public ValueControl
+ {	 
+     Q_OBJECT
+ private slots:
+    void processSliderChange( int );
+    void processSliderReleased( );
+	void processSliderPressed( );
+    void processSpinnerChange( int );
+
+ private:
+     QSlider *_slider;
+     QDoubleSpinBox *_spinbox;
+	 QLabel *_standardValue;
+	 QLabel *_min;
+	 QLabel *_max;
+	 bool _ignoreChanges;
+	 float _scale;
+ public:
+     FloatSliderControl( QString pvName, QString label=QString::null, int min=0, int max=100, QWidget *parent=0 );
+     virtual QVariant value() const;
+     virtual void setValue( QVariant );
+
+	 virtual float min() const { return _slider->minimum(); }
+	 virtual float max() const { return _slider->maximum(); }     
+	 virtual void setMin( float );
+	 virtual void setMax( float );
+
+     virtual void setConstraint(QString, QVariant);
+
+ public:
+     Q_PROPERTY( QVariant value READ value WRITE setValue USER true)
+ };
+
+
+
  class CL2_EXPORT LineEditControl : public ValueControl
  {
      Q_OBJECT

@@ -129,7 +129,7 @@ MainWindow::MainWindow(QWidget *parent)
 	_KVS.set( "ResultParam.ClassNamePos", "Positive" );
 	_KVS.set( "ResultParam.ClassNameNeg", "Negative" );
 	
-	ui->scrollAreaWidgetContents->layout()->addWidget( new IntSliderControl("ResultParam.SimpleThreshold", "Threshold:", 50, 120 ) );
+	ui->scrollAreaWidgetContents->layout()->addWidget( new FloatSliderControl("ResultParam.SimpleThreshold", "Threshold:", 50, 120 ) );
 	ui->scrollAreaWidgetContents->layout()->addWidget( new LineEditControl("ResultParam.ClassNamePos", "Positive class name:" ) );
 	ui->scrollAreaWidgetContents->layout()->addWidget( new LineEditControl("ResultParam.ClassNameNeg", "Negtive class name:" ) );
 
@@ -304,6 +304,7 @@ void MainWindow::importData(QString importData, QString colSeparator, QString de
 
 void MainWindow::on_cbResultColumn_activated()
 {
+	updateColStats(  );
 	updateValueType( );
 	updateInputModel();
 }
@@ -393,10 +394,12 @@ void MainWindow::updateValueType( )
 
     if (resTypeIndex==0)
     {
-		ColStat tmpcs = _colStats[respIdx];		
+		ColStat tmpcs = _colStats[respIdx];	
+		QVariant tmpVal("Hallo");
+		tmpVal = double(tmpcs._avg);
 		_KVS.setMin( "ResultParam.SimpleThreshold", tmpcs._min );
 		_KVS.setMax( "ResultParam.SimpleThreshold", tmpcs._max );
-		_KVS.set( "ResultParam.SimpleThreshold", tmpcs._avg );
+		_KVS.set( "ResultParam.SimpleThreshold", tmpVal );
 		//ui->lValueTypeThMin->setText(QString::number(tmpcs._min));
 		//ui->lValueTypeThMax->setText(QString::number(tmpcs._max));
 //		ui->hsValueTypeThValue->setMinimum(tmpcs._min );

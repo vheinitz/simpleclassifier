@@ -118,7 +118,131 @@ void IntSliderControl::setConstraint(QString constrName, QVariant val)
 
 
 
+//////////////////////
+FloatSliderControl::FloatSliderControl( QString pvName, QString label,int min, int max, QWidget *parent ): ValueControl(parent), _ignoreChanges(false)
+{
+    _slider=new QSlider(Qt::Horizontal);
+    _spinbox=new QDoubleSpinBox;
+	_spinbox->setMinimum( min );
+    _slider->setMinimum( min );
+    _spinbox->setMaximum( max );
+    _slider->setMaximum( max );
+	_scale=100;
+    setLayout(  new QHBoxLayout );
+    layout()->setMargin(1);
+    QLabel * text = new QLabel(label.isEmpty()?pvName:label);
+	_standardValue = new QLabel("");
+	_min = new QLabel(QString::number(min));
+	_max = new QLabel(QString::number(max));    
+    layout()->addWidget ( text );
+	layout()->addWidget ( _min );
+    layout()->addWidget ( _slider );
+	layout()->addWidget ( _max );
+    layout()->addWidget ( _spinbox );
+	layout()->addWidget ( _standardValue );
+    connect( _slider, SIGNAL(valueChanged(int)), this, SLOT(processSliderChange( int)) );
+    connect( _slider, SIGNAL(sliderReleased()), this, SLOT(processSliderReleased( )) );
+	connect( _slider, SIGNAL(sliderPressed()), this, SLOT(processSliderPressed( )) );
+    connect( _spinbox, SIGNAL(valueChanged(int)), this, SLOT(processSpinnerChange( int)) );
+    attachTo( pvName );
+}
 
+void FloatSliderControl::processSliderChange( int v)
+{
+    _spinbox->setValue( v/_scale );
+}
+
+void FloatSliderControl::processSliderReleased( )
+{
+	float sbv =_spinbox->value();
+	_KVS.set(_pvName, sbv, this );
+    _ignoreChanges = false;
+}
+
+void FloatSliderControl::processSliderPressed( )
+{    
+	_ignoreChanges = true;
+}
+
+
+void FloatSliderControl::processSpinnerChange( int v)
+{
+	_slider->setValue( v/_scale );
+	if ( ! _ignoreChanges )
+		_KVS.set(_pvName, _spinbox->value(), this );
+}
+
+QVariant FloatSliderControl::value() const
+{
+    return _spinbox->value();
+}
+
+void FloatSliderControl::setValue( QVariant v )
+{
+	_ignoreChanges = true;
+	float val = v.toInt();
+	QString sval = v.toString();
+    _spinbox->setValue( val );
+    _slider->setValue( val );
+	_ignoreChanges = false;
+}
+
+void FloatSliderControl::setMin( float v )
+{
+	if ( qAbs(v) == 0.0 )
+		_scale = 1;
+
+	else if ( qAbs(v) < 1 )
+	{
+		_scale = 1 / qAbs(v);
+	}
+	else 
+	{
+		_scale = 100;
+	}
+	_scale = _scale < 100? 100 : _scale;
+	_spinbox->setMinimum( v );
+    _slider->setMinimum( v*_scale );
+	_min->setText(QString::number(v));
+}
+
+
+void FloatSliderControl::setMax( float v )
+{
+	if ( qAbs(v) == 0.0 )
+		_scale = 1;
+
+	else if ( qAbs(v) < 1 )
+	{
+		_scale = (1 / qAbs(v)) > _scale ? (1 / qAbs(v)) : _scale;
+	}
+	_scale = _scale < 100? 100 : _scale;
+	_spinbox->setMaximum( v );
+    _slider->setMaximum( v*_scale );
+	_max->setText(QString::number(v));
+}
+
+void FloatSliderControl::setConstraint(QString constrName, QVariant val)
+{
+	_ignoreChanges=true;
+    if ( constrName == "Min" )
+    {
+        _spinbox->setMinimum( val.toInt() );
+        _slider->setMinimum( val.toInt() );
+    }
+    else if ( constrName == "Max" )
+    {
+        _spinbox->setMaximum( val.toInt() );
+        _slider->setMaximum( val.toInt() );
+    }
+	else if ( constrName == "Std" )
+    {
+        _standardValue->setText( QString("(%1)").arg(val.toString()) );
+    }
+	_ignoreChanges=false;
+}
+
+//////////////////////
 
 
 LineEditControl::LineEditControl( QString pvName, QString label, QWidget *parent ): ValueControl(parent), _ignoreChanges(false)
