@@ -67,9 +67,9 @@ TRANSLATIONS += \
 INCLUDEPATH += . "C:/LIB/opencv24/include" ./lib/kvs/ ./lib/os/src/ ./lib/gui/src/ ./lib/imgdb/
 
 
-
 win32 {
 	CONFIG(debug, debug|release) {		
+		DESTDIR = ../buildd
 		LIBS += \
 		C:/LIB/opencv24/lib/opencv_contrib240d.lib \
 		C:/LIB/opencv24/lib/opencv_core240d.lib \
@@ -78,5 +78,15 @@ win32 {
 		C:/LIB/opencv24/lib/opencv_imgproc240d.lib \
 		C:/LIB/opencv24/lib/opencv_ml240d.lib \
 		C:/LIB/opencv24/lib/opencv_objdetect240d.lib 
-        }
+	} else {
+		DESTDIR = ../build
+		LIBS += \
+		C:/LIB/opencv24/lib/opencv_contrib240.lib \
+		C:/LIB/opencv24/lib/opencv_core240.lib \
+		C:/LIB/opencv24/lib/opencv_features2d240.lib \
+		C:/LIB/opencv24/lib/opencv_highgui240.lib \
+		C:/LIB/opencv24/lib/opencv_imgproc240.lib \
+		C:/LIB/opencv24/lib/opencv_ml240.lib \
+		C:/LIB/opencv24/lib/opencv_objdetect240.lib  
+	}
 }	
