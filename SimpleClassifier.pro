@@ -1,10 +1,5 @@
 QT       += core gui xml sql network
 
-#CONFIG += c++11
-
-# You can make your code fail to compile if it uses deprecated APIs.
-# In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
     classifier.cpp \
@@ -61,15 +56,11 @@ FORMS += \
 TRANSLATIONS += \
     SimpleClassifier_ru_RU.ts
 
-
-
-
 INCLUDEPATH += . "C:/LIB/opencv24/include" ./lib/kvs/ ./lib/os/src/ ./lib/gui/src/ ./lib/imgdb/
-
 
 win32 {
 	CONFIG(debug, debug|release) {		
-		DESTDIR = ../buildd
+		DESTDIR = ./buildd
 		LIBS += \
 		C:/LIB/opencv24/lib/opencv_contrib240d.lib \
 		C:/LIB/opencv24/lib/opencv_core240d.lib \
@@ -79,7 +70,7 @@ win32 {
 		C:/LIB/opencv24/lib/opencv_ml240d.lib \
 		C:/LIB/opencv24/lib/opencv_objdetect240d.lib 
 	} else {
-		DESTDIR = ../build
+		DESTDIR = ./build
 		LIBS += \
 		C:/LIB/opencv24/lib/opencv_contrib240.lib \
 		C:/LIB/opencv24/lib/opencv_core240.lib \
