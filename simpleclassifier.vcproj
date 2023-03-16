@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="simpleclassifier"
+	ProjectGUID="{FF59A2BB-7BDF-3772-898D-489815859B7D}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="debug\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include\QtXml&quot;,&quot;..\..\..\Qt\4.8.4\include\QtSql&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;.&quot;,&quot;..\..\..\LIB\opencv24\include&quot;,&quot;lib\kvs&quot;,&quot;lib\os\src&quot;,&quot;lib\gui\src&quot;,&quot;lib\imgdb&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;debug&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="debug\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="debug\"
+				Optimization ="4"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_SQL_LIB,QT_XML_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmaind.lib C:/LIB/opencv24/lib/opencv_contrib240d.lib C:/LIB/opencv24/lib/opencv_core240d.lib C:/LIB/opencv24/lib/opencv_features2d240d.lib C:/LIB/opencv24/lib/opencv_highgui240d.lib C:/LIB/opencv24/lib/opencv_imgproc240d.lib C:/LIB/opencv24/lib/opencv_ml240d.lib C:/LIB/opencv24/lib/opencv_objdetect240d.lib c:\Qt\4.8.4\lib\QtSqld4.lib c:\Qt\4.8.4\lib\QtXmld4.lib c:\Qt\4.8.4\lib\QtGuid4.lib c:\Qt\4.8.4\lib\QtNetworkd4.lib c:\Qt\4.8.4\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\simpleclassifier.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_SQL_LIB,QT_XML_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="release\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="release\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include\QtXml&quot;,&quot;..\..\..\Qt\4.8.4\include\QtSql&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;.&quot;,&quot;..\..\..\LIB\opencv24\include&quot;,&quot;lib\kvs&quot;,&quot;lib\os\src&quot;,&quot;lib\gui\src&quot;,&quot;lib\imgdb&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;release&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="release\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="release\"
+				Optimization ="2"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_SQL_LIB,QT_XML_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmain.lib c:\Qt\4.8.4\lib\QtSql4.lib c:\Qt\4.8.4\lib\QtXml4.lib c:\Qt\4.8.4\lib\QtGui4.lib c:\Qt\4.8.4\lib\QtNetwork4.lib c:\Qt\4.8.4\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\simpleclassifier.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_SQL_LIB,QT_XML_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="classifier.cpp" />
+			<File
+				RelativePath="lib\log\clog.cpp" />
+			<File
+				RelativePath="lib\db\src\dbmanager.cpp" />
+			<File
+				RelativePath="lib\gui\src\extcombobox.cpp" />
+			<File
+				RelativePath="lib\gui\src\extgview.cpp" />
+			<File
+				RelativePath="lib\gui\src\extimageviewer.cpp" />
+			<File
+				RelativePath="lib\os\src\filewatcher.cpp" />
+			<File
+				RelativePath="lib\os\src\fstools.cpp" />
+			<File
+				RelativePath="lib\gui\src\imagegroupview.cpp" />
+			<File
+				RelativePath="lib\gui\src\imagelistmodel.cpp" />
+			<File
+				RelativePath="lib\gui\src\imageview.cpp" />
+			<File
+				RelativePath="lib\imgdb\src\imgdb.cpp" />
+			<File
+				RelativePath="lib\kvs\kvstore.cpp" />
+			<File
+				RelativePath="main.cpp" />
+			<File
+				RelativePath="mainwindow.cpp" />
+			<File
+				RelativePath="lib\gui\src\markeritem.cpp" />
+			<File
+				RelativePath="lib\gui\src\objectselector.cpp" />
+			<File
+				RelativePath="lib\os\src\persistence.cpp" />
+			<File
+				RelativePath="lib\report\reportcreator.cpp" />
+			<File
+				RelativePath="lib\os\src\siserver.cpp" />
+			<File
+				RelativePath="lib\gui\src\valuecontrols.cpp" />
+			<File
+				RelativePath="lib\xml\xpath.cpp" />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="classifier.h" />
+			<File
+				RelativePath="lib\log\clog.h" />
+			<File
+				RelativePath="lib\db\src\dbmanager.h" />
+			<File
+				RelativePath="lib\gui\src\extcombobox.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extcombobox.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extcombobox.h -o debug\moc_extcombobox.cpp"
+						Description="MOC lib\gui\src\extcombobox.h"
+						Outputs="debug\moc_extcombobox.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extcombobox.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extcombobox.h -o release\moc_extcombobox.cpp"
+						Description="MOC lib\gui\src\extcombobox.h"
+						Outputs="release\moc_extcombobox.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\extgview.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extgview.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extgview.h -o debug\moc_extgview.cpp"
+						Description="MOC lib\gui\src\extgview.h"
+						Outputs="debug\moc_extgview.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extgview.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extgview.h -o release\moc_extgview.cpp"
+						Description="MOC lib\gui\src\extgview.h"
+						Outputs="release\moc_extgview.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\extimageviewer.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extimageviewer.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extimageviewer.h -o debug\moc_extimageviewer.cpp"
+						Description="MOC lib\gui\src\extimageviewer.h"
+						Outputs="debug\moc_extimageviewer.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\extimageviewer.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\extimageviewer.h -o release\moc_extimageviewer.cpp"
+						Description="MOC lib\gui\src\extimageviewer.h"
+						Outputs="release\moc_extimageviewer.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\os\src\filewatcher.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\filewatcher.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\filewatcher.h -o debug\moc_filewatcher.cpp"
+						Description="MOC lib\os\src\filewatcher.h"
+						Outputs="debug\moc_filewatcher.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\filewatcher.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\filewatcher.h -o release\moc_filewatcher.cpp"
+						Description="MOC lib\os\src\filewatcher.h"
+						Outputs="release\moc_filewatcher.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\os\src\fstools.h" />
+			<File
+				RelativePath="lib\gui\src\imagegroupview.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\imagegroupview.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\imagegroupview.h -o debug\moc_imagegroupview.cpp"
+						Description="MOC lib\gui\src\imagegroupview.h"
+						Outputs="debug\moc_imagegroupview.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\imagegroupview.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\imagegroupview.h -o release\moc_imagegroupview.cpp"
+						Description="MOC lib\gui\src\imagegroupview.h"
+						Outputs="release\moc_imagegroupview.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\imagelistmodel.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\imagelistmodel.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\imagelistmodel.h -o debug\moc_imagelistmodel.cpp"
+						Description="MOC lib\gui\src\imagelistmodel.h"
+						Outputs="debug\moc_imagelistmodel.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\imagelistmodel.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\imagelistmodel.h -o release\moc_imagelistmodel.cpp"
+						Description="MOC lib\gui\src\imagelistmodel.h"
+						Outputs="release\moc_imagelistmodel.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\imageview.h" />
+			<File
+				RelativePath="lib\imgdb\src\imgdb.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\imgdb\src\imgdb.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\imgdb\src\imgdb.h -o debug\moc_imgdb.cpp"
+						Description="MOC lib\imgdb\src\imgdb.h"
+						Outputs="debug\moc_imgdb.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\imgdb\src\imgdb.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\imgdb\src\imgdb.h -o release\moc_imgdb.cpp"
+						Description="MOC lib\imgdb\src\imgdb.h"
+						Outputs="release\moc_imgdb.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\kvs\kvstore.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\kvs\kvstore.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\kvs\kvstore.h -o debug\moc_kvstore.cpp"
+						Description="MOC lib\kvs\kvstore.h"
+						Outputs="debug\moc_kvstore.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\kvs\kvstore.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\kvs\kvstore.h -o release\moc_kvstore.cpp"
+						Description="MOC lib\kvs\kvstore.h"
+						Outputs="release\moc_kvstore.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainwindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;mainwindow.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainwindow.h -o debug\moc_mainwindow.cpp"
+						Description="MOC mainwindow.h"
+						Outputs="debug\moc_mainwindow.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;mainwindow.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainwindow.h -o release\moc_mainwindow.cpp"
+						Description="MOC mainwindow.h"
+						Outputs="release\moc_mainwindow.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\markeritem.h" />
+			<File
+				RelativePath="lib\os\src\persistence.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\persistence.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\persistence.h -o debug\moc_persistence.cpp"
+						Description="MOC lib\os\src\persistence.h"
+						Outputs="debug\moc_persistence.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\persistence.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\persistence.h -o release\moc_persistence.cpp"
+						Description="MOC lib\os\src\persistence.h"
+						Outputs="release\moc_persistence.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\report\reportcreator.h" />
+			<File
+				RelativePath="lib\os\src\siserver.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\siserver.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\siserver.h -o debug\moc_siserver.cpp"
+						Description="MOC lib\os\src\siserver.h"
+						Outputs="debug\moc_siserver.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\os\src\siserver.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\os\src\siserver.h -o release\moc_siserver.cpp"
+						Description="MOC lib\os\src\siserver.h"
+						Outputs="release\moc_siserver.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\gui\src\valuecontrols.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\valuecontrols.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\valuecontrols.h -o debug\moc_valuecontrols.cpp"
+						Description="MOC lib\gui\src\valuecontrols.h"
+						Outputs="debug\moc_valuecontrols.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;lib\gui\src\valuecontrols.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtNetwork&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtXml&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtSql&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;.&quot; -I&quot;..\..\..\LIB\opencv24\include&quot; -I&quot;lib\kvs&quot; -I&quot;lib\os\src&quot; -I&quot;lib\gui\src&quot; -I&quot;lib\imgdb&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 lib\gui\src\valuecontrols.h -o release\moc_valuecontrols.cpp"
+						Description="MOC lib\gui\src\valuecontrols.h"
+						Outputs="release\moc_valuecontrols.cpp"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lib\xml\xpath.h" />
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="debug\moc_extcombobox.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_extcombobox.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_extgview.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_extgview.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_extimageviewer.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_extimageviewer.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_filewatcher.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_filewatcher.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_imagegroupview.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_imagegroupview.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_imagelistmodel.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_imagelistmodel.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_imgdb.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_imgdb.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_kvstore.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_kvstore.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_mainwindow.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_mainwindow.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_persistence.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_persistence.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_siserver.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_siserver.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\moc_valuecontrols.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\moc_valuecontrols.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="ui_imagegroupview.h" />
+			<File
+				RelativePath="ui_mainwindow.h" />
+		</Filter>
+		<Filter
+			Name="Translation Files"
+			Filter="ts;xlf"
+			UniqueIdentifier="{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}"
+			ParseFiles="false">
+			<File
+				RelativePath="SimpleClassifier_ru_RU.ts" />
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
+			ParseFiles="false">
+			<File
+				RelativePath="lib\gui\src\imagegroupview.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;lib\gui\src\imagegroupview.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe lib\gui\src\imagegroupview.ui -o ui_imagegroupview.h"
+						Description="UIC lib\gui\src\imagegroupview.ui"
+						Outputs="ui_imagegroupview.h"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;lib\gui\src\imagegroupview.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe lib\gui\src\imagegroupview.ui -o ui_imagegroupview.h"
+						Description="UIC lib\gui\src\imagegroupview.ui"
+						Outputs="ui_imagegroupview.h"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainwindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;mainwindow.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe mainwindow.ui -o ui_mainwindow.h"
+						Description="UIC mainwindow.ui"
+						Outputs="ui_mainwindow.h"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;mainwindow.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe mainwindow.ui -o ui_mainwindow.h"
+						Description="UIC mainwindow.ui"
+						Outputs="ui_mainwindow.h"
+						Path="c:\Qt\4.8.4\bin" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

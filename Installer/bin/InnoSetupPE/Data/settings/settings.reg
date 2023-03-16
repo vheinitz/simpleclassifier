@@ -1,0 +1,43 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\SOFTWARE\Jordan Russell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Jordan Russell\Inno Setup]
+
+[HKEY_CURRENT_USER\SOFTWARE\Jordan Russell\Inno Setup\Options]
+"ShowToolbar"="1"
+"ShowStatusBar"="1"
+"LowPriorityDuringCompile"="0"
+"Zoom"="0"
+"ShowStartupForm"="0"
+"UseWizard"="1"
+"MakeBackups"="0"
+"FullPathInTitleBar"="0"
+"UndoAfterSave"="0"
+"PauseOnDebuggerExceptions"="1"
+"UseSynHigh"="1"
+"EditorCursorPastEOL"="1"
+"TabWidth"="2"
+"EditorFontName"="Courier New"
+"EditorFontSize"="10"
+"EditorFontCharset"="1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Jordan Russell\Inno Setup\ScriptFileHistoryNew]
+"History0"="C:\\Development\\eval\\SimpleClassifier\\Installer\\SimpleClassifier.iss"
+"History1"="C:\\Development\\eval\\SimpleClassifier - Kopie\\Installer\\SimpleClassifier.iss"
+"History2"="C:\\Development\\helios-base\\helios-rc\\Installer\\ResultConfirmationSetup.iss"
+"History3"="C:\\Development\\helios-base\\helios-helios\\Installer\\Helios.iss"
+"History4"="c:\\Development\\aesku_git\\helios-base\\helios-helios\\Installer\\PRServer.iss"
+"History5"="c:\\Development\\aesku_git\\helios-base\\helios-helios\\Installer\\LicenseManager.iss"
+"History6"="C:\\Development\\aesku_git\\helios-base\\helios-helios\\Installer\\Helios.iss"
+"History7"="C:\\Development\\aesku_git\\helios_stable\\helios-helios\\Installer\\HeliosBurnIn.iss"
+"History8"="C:\\Development\\aesku_git\\helios_stable\\helios-helios\\Installer\\QcTool.iss"
+"History9"="C:\\Development\\RC3.1_BL3.1.42\\Helios\\Installer\\WLCompare.iss"
+
+[HKEY_CURRENT_USER\SOFTWARE\Jordan Russell\Inno Setup\State]
+"WindowLeft"="82"
+"WindowTop"="0"
+"WindowRight"="1498"
+"WindowBottom"="830"
+"WindowMaximized"="0"
+"StatusPanelHeight"="104"
